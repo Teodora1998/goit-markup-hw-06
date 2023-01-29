@@ -19,10 +19,45 @@
     <div class="inner-modal">
       <button class="close-modal">
         <svg width="11" height="11" data-modal-close>
-          <use href="/images/icons.svg#icon-x"></use>
+          <use href="images/icons.svg#icon-x"></use>
         </svg>
       </button>
-      <h2 class="formular-title">Leave your information and we'll call you back</h2>
+
+
+      <div class="request-form">
+        <h2 class="formular-title">Leave your information and we'll call you back</h2>
+        <form name="request_form" autocomplete="on" novalidate>
+          <label>Name
+            <input type="text" name="name" />
+            <sgv>
+              <use href="/images/icons.svg#icon-Name" width="12px" height="12px">
+              </use>
+            </sgv>
+          </label>
+          <label>Telephone
+            <input type="tel" name="phone" />
+            <sgv>
+              <use href="/images/icons.svg#icon-phone" width="13px" height="13px">
+              </use>
+            </sgv>
+          </label>
+
+          <label>E-mail
+            <input type="email" name="email" />
+            <sgv>
+              <use href="/images/icons.svg#icon-envelope" width="15px" height="12px">
+              </use>
+            </sgv>
+          </label>
+
+          <label>Comments
+            <textarea name="comments" placeholder="Enter the text"></textarea>
+          </label>
+          <button class="request-botton" type="submit">Send</button>
+        </form>
+
+
+      </div>
     </div>
 
   </div>
@@ -442,7 +477,7 @@
             <input class="email" type="email" name="email" placeholder="E-mail" />
             <button class="form-button" type="submit">Subscribe
               <svg width="24px" height="24px">
-                <use href="images/icons.svg#icon-icon-send"></use>
+                <use href="images/icons.svg#icon-send"></use>
               </svg>
             </button>
           </form>
