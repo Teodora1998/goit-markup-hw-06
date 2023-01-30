@@ -275,11 +275,21 @@ ul {
   height: 120px;
 }
 
-.checkbox {
-  display: flex;
-  flex-direction: row;
-  color: var(--text-color);
-  border: 16px solid var(--subtitle-color);
+.checkbox-replace {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--subtitle-color);
+  border-radius: 2px;
+}
+
+.input[type="checkbox"] {
+  display: none;
+}
+
+.input[type="checkbox"]:checked + .checkbox-replace {
+  border: var(--brand-color);
+  background-color: var(--brand-color);
 }
 
 .request-botton {
@@ -298,6 +308,7 @@ ul {
   cursor: pointer;
   color: var(--white-background);
   padding: 10px 80px;
+  margin: 30px 164px 40px;
   border: 2px solid red;
 }
 
