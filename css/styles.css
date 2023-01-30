@@ -275,11 +275,18 @@ ul {
   height: 120px;
 }
 
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  color: var(--text-color);
+  border: 16px solid var(--subtitle-color);
+}
+
 .request-botton {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  align-self: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -291,6 +298,7 @@ ul {
   cursor: pointer;
   color: var(--white-background);
   padding: 10px 80px;
+  border: 2px solid red;
 }
 
 /* page section styling */
