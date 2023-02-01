@@ -26,29 +26,31 @@
 
       <div class="request-form">
         <h2 class="formular-title">Leave your information and we'll call you back</h2>
-        <form name="request_form" autocomplete="on" novalidate>
-          <label>Name
-            <sgv>
-              <use href="/images/icons.svg#icon-person-black"></use>
-            </sgv>
-            <input type="text" name="name" />
-
-          </label>
-          <label>Telephone
-            <sgv>
-              <use href="/images/icons.svg#icon-phone-black"></use>
-            </sgv>
-            <input type="tel" name="phone" />
-
-          </label>
-
-          <label>E-mail
-            <sgv>
-              <use href="/images/icons.svg#icon-email-black"></use>
-            </sgv>
-            <input type="email" name="email" />
-
-          </label>
+        <form name="request_form" autocomplete="off">
+          <div class="icon-styling">
+            <label>Name
+              <sgv class="form-icon-style">
+                <use href="/images/icons.svg#icon-person-black" width="16" height="16"></use>
+              </sgv>
+              <input type="text" name="name" class="input-styling" />
+            </label>
+          </div>
+          <div class="icon-styling">
+            <label>Telephone
+              <sgv class="form-icon-style">
+                <use href="/images/icons.svg#icon-phone-black"></use>
+              </sgv>
+              <input type="tel" name="phone" class="input-styling" />
+            </label>
+          </div>
+          <div class="icon-styling">
+            <label>E-mail
+              <sgv class="form-icon-style">
+                <use href="/images/icons.svg#icon-email-black"></use>
+              </sgv>
+              <input type="email" name="email" class="input-styling" />
+            </label>
+          </div>
 
           <label>Comments
             <textarea name="comments" placeholder="Enter the text"></textarea>
@@ -65,13 +67,13 @@
             </span>
           </label>
           <button class="request-botton" type="submit">Send</button>
-
         </form>
 
 
       </div>
-    </div>
 
+
+    </div>
   </div>
 
 
@@ -448,51 +450,53 @@
             </ul>
           </address>
         </div>
-        <div class="container footer-social">
-          <h3 class="footer-social-title">Find us on</h3>
-          <ul class="unstyled-list social-list">
-            <li>
-              <a href="#" target="_blank" class="footer-social-link">
-                <svg class="footer-social-icon">
-                  <use href="images/icons.svg#icon-instagram">
-                  </use>
+        <div class="footer-styling">
+          <div class="container footer-social">
+            <h3 class="footer-social-title">Find us on</h3>
+            <ul class="unstyled-list social-list">
+              <li>
+                <a href="#" target="_blank" class="footer-social-link">
+                  <svg class="footer-social-icon">
+                    <use href="images/icons.svg#icon-instagram">
+                    </use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" class="footer-social-link">
+                  <svg class="footer-social-icon">
+                    <use href="images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" class="footer-social-link">
+                  <svg class="footer-social-icon">
+                    <use href="images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" class="footer-social-link">
+                  <svg class="footer-social-icon">
+                    <use href="images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+            </ul>
+          </div>
+          <div class="container form-container">
+            <h3 class="footer-social-title">Subscribe to the newsletter</h3>
+            <form class="email-form">
+              <input class="email" type="email" name="email" placeholder="E-mail" />
+              <button class="form-button" type="submit">Subscribe
+                <svg width="24px" height="24px">
+                  <use href="images/icons.svg#icon-send"></use>
                 </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank" class="footer-social-link">
-                <svg class="footer-social-icon">
-                  <use href="images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank" class="footer-social-link">
-                <svg class="footer-social-icon">
-                  <use href="images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank" class="footer-social-link">
-                <svg class="footer-social-icon">
-                  <use href="images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-          </ul>
-        </div>
-        <div class="container form-container">
-          <h3 class="footer-social-title">Subscribe to the newsletter</h3>
-          <form class="email-form">
-            <input class="email" type="email" name="email" placeholder="E-mail" />
-            <button class="form-button" type="submit">Subscribe
-              <svg width="24px" height="24px">
-                <use href="images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
-          </form>
+              </button>
+            </form>
+          </div>
         </div>
       </section>
     </footer>

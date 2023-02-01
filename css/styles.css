@@ -238,7 +238,6 @@ ul {
 }
 
 .request-form label {
-  position: relative;
   display: flex;
   flex-direction: column;
   font-size: 12px;
@@ -248,7 +247,7 @@ ul {
   margin: 4px 40px;
 }
 
-.request-form label input {
+.input-styling {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-bottom: 10px;
@@ -256,13 +255,14 @@ ul {
   height: 40px;
 }
 
-.request-form label svg {
+.icon-styling {
+  position: relative;
+}
+
+.form-icon {
   position: absolute;
-  top: 50%;
-  left: 0;
-  fill: var(--text-color);
-  margin-top: -20px;
-  height: 30px;
+  width: 16px;
+  height: 16px;
 }
 
 .request-form label textarea {
@@ -674,6 +674,11 @@ ul {
 }
 
 /* Footer Formular */
+
+.footer-styling {
+  display: flex;
+  justify-content: end;
+}
 
 .form-container {
   margin-top: 72px;
