@@ -198,6 +198,8 @@ ul {
 
 .close-modal:hover {
   fill: var(--brand-color);
+  cubic-bezier: (0.4, 0, 0.2, 1);
+  transition: transform 250ms ease;
 }
 
 .modal {
@@ -222,15 +224,12 @@ ul {
   border-radius: 4px;
 }
 
-/*
 .is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
   transform: scale(0.1);
 }
-
-*/
 
 .request-form {
   display: block;
@@ -267,17 +266,6 @@ ul {
   height: 40px;
 }
 
-.input-styling:hover,
-.input-styling:focus {
-  outline: 1px solid var(--brand-color);
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.icon-styling {
-  display: flex;
-}
-
 .form-icon-style {
   position: absolute;
   display: inline-block;
@@ -285,6 +273,26 @@ ul {
   top: 50%;
   left: 0;
   margin: 0 14px;
+}
+
+.input-styling:hover,
+.input-styling:focus {
+  outline: 1px solid var(--brand-color);
+  border-radius: 4px;
+  cursor: pointer;
+  cubic-bezier: (0.4, 0, 0.2, 1);
+  transition: transform 250ms ease;
+}
+
+.input-styling:hover + .form-icon-style,
+.input-styling:focus + .form-icon-style {
+  fill: var(--brand-color);
+  cubic-bezier: (0.4, 0, 0.2, 1);
+  transition: transform 250ms ease;
+}
+
+.icon-styling {
+  display: flex;
 }
 
 .textarea-style {
@@ -302,6 +310,8 @@ ul {
 .textarea-style:focus {
   outline: 1px solid var(--brand-color);
   border-radius: 4px;
+  cubic-bezier: (0.4, 0, 0.2, 1);
+  transition: transform 250ms ease;
 }
 
 *,
@@ -374,6 +384,8 @@ input[type="checkbox"] {
 
 .request-botton:hover {
   background: #188ce8;
+  cubic-bezier: (0.4, 0, 0.2, 1);
+  transition: transform 250ms ease;
 }
 
 /* page section styling */
